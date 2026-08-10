@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects Showcase — Poojith S | Web & UI/UX Developer</title>
+  <meta name="description" content="Explore featured web development and UI/UX design projects by Poojith S." />
+
+  <!-- Google Fonts: Playfair Display & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=1723240000" />
+</head>
+
+<body>
+  <!-- Page Transition Overlay -->
+  <div class="page-transition-overlay">
+    <div class="page-transition-bar"></div>
+  </div>
+
+  <!-- Ambient Glowing Orbs -->
+  <div class="ambient-glow-orb orb-1"></div>
+  <div class="ambient-glow-orb orb-2"></div>
+  <div class="ambient-glow-orb orb-3"></div>
+
+  <!-- Cursor Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Dual Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Background fixed canvas animation wrapper -->
+  <div class="canvas-wrapper">
+    <canvas id="hero-canvas"></canvas>
+    <div class="canvas-vignette"></div>
+  </div>
+
+  <main class="content-overlay" style="padding-top: 20px;">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="nav-left">
+        <a href="index.html" class="ps-logo-badge">PS</a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">Profile</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html" class="active">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="process.html">Process</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html" class="cv-download-btn magnetic-btn">Download Resume ↓</a>
+      </div>
+    </header>
+
+    <!-- PROJECTS GALLERY HERO -->
+    <section class="projects-hero-section" style="margin-bottom: 40px;">
+      <div class="section-badge-tag">FEATURED WORK & EXPERIMENTS</div>
+      <h1 class="section-main-title word-pop-container" style="font-size: clamp(2.5rem, 5vw, 4rem);">
+        Things I've Built
+      </h1>
+      <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 680px; line-height: 1.6;">
+        A curated selection of full-stack applications, UI/UX design concepts, and creative web experiments built with
+        modern technologies.
+      </p>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs" style="display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap;">
+        <button class="filter-btn active magnetic-btn" data-filter="all"
+          style="padding: 8px 20px; border-radius: 999px; border: 1px solid var(--accent-red); background: var(--accent-red); color: #fff; cursor: pointer; font-size: 0.88rem; font-weight: 600;">All
+          Projects</button>
+        <button class="filter-btn magnetic-btn" data-filter="fullstack"
+          style="padding: 8px 20px; border-radius: 999px; border: 1px solid var(--card-border); background: var(--card-bg); color: var(--text-muted); cursor: pointer; font-size: 0.88rem; font-weight: 600;">Full-Stack</button>
+        <button class="filter-btn magnetic-btn" data-filter="uiux"
+          style="padding: 8px 20px; border-radius: 999px; border: 1px solid var(--card-border); background: var(--card-bg); color: var(--text-muted); cursor: pointer; font-size: 0.88rem; font-weight: 600;">UI/UX
+          Design</button>
+        <button class="filter-btn magnetic-btn" data-filter="creative"
+          style="padding: 8px 20px; border-radius: 999px; border: 1px solid var(--card-border); background: var(--card-bg); color: var(--text-muted); cursor: pointer; font-size: 0.88rem; font-weight: 600;">Creative
+          Dev</button>
+      </div>
+    </section>
+
+    <!-- PROJECTS GRID -->
+    <section class="projects-gallery-section" style="margin-bottom: 80px;">
+      <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
+
+        <!-- Project Card 1 -->
+        <div class="project-card glass-card tilt-card" data-category="fullstack" data-project-id="1" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="width: 100%; height: 200px; overflow: hidden; background: #0c0c12;">
+            <img src="./healthy.png" alt="Healthy Habit Tracker Preview" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'" />
+          </div>
+          <div style="padding: 26px; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+            <div>
+              <div class="project-badge">PROJECT 01 — FULL STACK</div>
+              <h3 class="project-title">Healthy Habit Tracker</h3>
+              <p class="project-desc">
+                A comprehensive health and habit tracking web application to plan, track, and sustain daily health goals
+                effectively.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Tailwind CSS</span>
+              </div>
+            </div>
+            <div class="project-card-footer" style="padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.08);">
+              <span class="view-details-btn">Explore Details ↗</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card glass-card tilt-card" data-category="fullstack" data-project-id="2" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="width: 100%; height: 200px; overflow: hidden; background: #0c0c12;">
+            <img src="./lock.png" alt="Smart Door Lock System Preview" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'" />
+          </div>
+          <div style="padding: 26px; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
+            <div>
+              <div class="project-badge">PROJECT 02 — IOT & CLOUD</div>
+              <h3 class="project-title">Smart Door Lock System</h3>
+              <p class="project-desc">
+                IoT-integrated security system featuring real-time authentication, activity logs, and remote keyless access
+                control.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+            <div class="project-card-footer" style="padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.08);">
+              <span class="view-details-btn">Explore Details ↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <a href="index.html" class="ps-logo-badge">POOJITH S</a>
+        <p class="copyright-text">Web Developer • UI/UX Developer — APS College of Engineering</p>
+        <p class="copyright-text">© 2026 Poojith S. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- FULL SCREEN INTERACTIVE PROJECT DETAIL MODAL -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close-btn">&times;</button>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <script src="app.js?v=1723240000"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience & Journey — Poojith S | Web & UI/UX Developer</title>
+  <meta name="description" content="Career journey, internship experience, and academic foundation of Poojith S." />
+
+  <!-- Google Fonts: Playfair Display & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=1723250000" />
+</head>
+
+<body>
+  <!-- Page Transition Overlay -->
+  <div class="page-transition-overlay">
+    <div class="page-transition-bar"></div>
+  </div>
+
+  <!-- Ambient Glowing Orbs -->
+  <div class="ambient-glow-orb orb-1"></div>
+  <div class="ambient-glow-orb orb-2"></div>
+  <div class="ambient-glow-orb orb-3"></div>
+
+  <!-- Cursor Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Dual Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Background fixed canvas animation wrapper -->
+  <div class="canvas-wrapper">
+    <canvas id="hero-canvas"></canvas>
+    <div class="canvas-vignette"></div>
+  </div>
+
+  <main class="content-overlay" style="padding-top: 20px;">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="nav-left">
+        <a href="index.html" class="ps-logo-badge">PS</a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">Profile</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html" class="active">Experience</a>
+          <a href="process.html">Process</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html" class="cv-download-btn magnetic-btn">Download Resume ↓</a>
+      </div>
+    </header>
+
+    <!-- EXPERIENCE HERO -->
+    <section class="experience-hero-section" style="margin-bottom: 50px;">
+      <div class="section-badge-tag">JOURNEY & EXPERIENCE</div>
+      <h1 class="section-main-title word-pop-container" style="font-size: clamp(2.5rem, 5vw, 4rem);">
+        Career Growth & Milestones
+      </h1>
+      <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 720px; line-height: 1.7;">
+        A chronological view of my experience, academic foundation at APS College of Engineering, and technical milestones.
+      </p>
+    </section>
+
+    <!-- TIMELINE SECTION -->
+    <section class="timeline-experience-section" style="margin-bottom: 80px;">
+      <div class="timeline-list" style="border-left: 2px solid var(--accent-red); padding-left: 28px;">
+        
+        <!-- Entry 1 -->
+        <div class="timeline-entry glass-card tilt-card" style="padding: 28px; margin-bottom: 30px; position: relative;">
+          <div class="timeline-dot" style="left: -40px; top: 32px;"></div>
+          <div class="timeline-period">2026 — Present</div>
+          <h3 class="timeline-role">Web Developer & UI/UX Developer</h3>
+          <div class="timeline-org">Freelance / Personal Projects</div>
+          <p class="timeline-desc">
+            Designing and building scalable web applications, custom UI components, and interactive developer portfolios using React, Next.js, Node.js, and MongoDB.
+          </p>
+        </div>
+
+        <!-- Entry 2 -->
+        <div class="timeline-entry glass-card tilt-card" style="padding: 28px; margin-bottom: 30px; position: relative;">
+          <div class="timeline-dot" style="left: -40px; top: 32px;"></div>
+          <div class="timeline-period">2025 — 2026</div>
+          <h3 class="timeline-role">Web Development Intern</h3>
+          <div class="timeline-org">Practicer & Developer</div>
+          <p class="timeline-desc">
+            Learned and practiced web development and UI/UX design. Built component libraries, interactive wireframes, and integrated REST APIs.
+          </p>
+        </div>
+
+        <!-- Entry 3 -->
+        <div class="timeline-entry glass-card tilt-card" style="padding: 28px; position: relative;">
+          <div class="timeline-dot" style="left: -40px; top: 32px;"></div>
+          <div class="timeline-period">Academic Journey</div>
+          <h3 class="timeline-role">APS College of Engineering</h3>
+          <div class="timeline-org">Bachelor's Degree — Graduating</div>
+          <p class="timeline-desc">
+            Building a strong foundation in computer science and software engineering fundamentals while exploring web technologies and user experience design.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KEY MILESTONES -->
+    <section class="milestones-section" style="margin-bottom: 80px;">
+      <div class="section-badge-tag">HIGHLIGHTS</div>
+      <h2 class="section-main-title word-pop-container">Key Achievements</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        <div class="glass-card tilt-card" style="padding: 28px 24px; border-top: 3px solid var(--accent-red);">
+          <div style="font-size: 1.8rem; color: var(--accent-red); font-weight: 800; font-family: 'Playfair Display', serif; margin-bottom: 8px;">15+ Projects</div>
+          <h4 style="color: #fff; margin-bottom: 6px;">Delivered & Tested</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5;">Successfully engineered full-stack, frontend, and IoT project prototypes.</p>
+        </div>
+
+        <div class="glass-card tilt-card" style="padding: 28px 24px; border-top: 3px solid var(--accent-magenta);">
+          <div style="font-size: 1.8rem; color: var(--accent-magenta); font-weight: 800; font-family: 'Playfair Display', serif; margin-bottom: 8px;">IoT Lock</div>
+          <h4 style="color: #fff; margin-bottom: 6px;">Smart Access System</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5;">Built a real-time keyless security lock web interface with instant access logs.</p>
+        </div>
+
+        <div class="glass-card tilt-card" style="padding: 28px 24px; border-top: 3px solid var(--accent-purple);">
+          <div style="font-size: 1.8rem; color: var(--accent-purple); font-weight: 800; font-family: 'Playfair Display', serif; margin-bottom: 8px;">Habit Tracker</div>
+          <h4 style="color: #fff; margin-bottom: 6px;">Wellness Dashboard</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5;">Designed Next.js habit tracker for daily health goal consistency.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <a href="index.html" class="ps-logo-badge">POOJITH S</a>
+        <p class="copyright-text">Web Developer • UI/UX Developer — APS College of Engineering</p>
+        <p class="copyright-text">© 2026 Poojith S. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js?v=1723250000"></script>
+</body>
+
+</html>

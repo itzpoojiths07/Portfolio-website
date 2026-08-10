@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design & Dev Process — Poojith S | Web & UI/UX Developer</title>
+  <meta name="description" content="Explore the 4-stage UI/UX design and web development workflow of Poojith S." />
+
+  <!-- Google Fonts: Playfair Display & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=1723250000" />
+</head>
+
+<body>
+  <!-- Page Transition Overlay -->
+  <div class="page-transition-overlay">
+    <div class="page-transition-bar"></div>
+  </div>
+
+  <!-- Ambient Glowing Orbs -->
+  <div class="ambient-glow-orb orb-1"></div>
+  <div class="ambient-glow-orb orb-2"></div>
+  <div class="ambient-glow-orb orb-3"></div>
+
+  <!-- Cursor Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Custom Dual Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Background fixed canvas animation wrapper -->
+  <div class="canvas-wrapper">
+    <canvas id="hero-canvas"></canvas>
+    <div class="canvas-vignette"></div>
+  </div>
+
+  <main class="content-overlay" style="padding-top: 20px;">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="nav-left">
+        <a href="index.html" class="ps-logo-badge">PS</a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">Profile</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="process.html" class="active">Process</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html" class="cv-download-btn magnetic-btn">Download Resume ↓</a>
+      </div>
+    </header>
+
+    <!-- PROCESS HERO -->
+    <section class="process-hero-section" style="margin-bottom: 50px;">
+      <div class="section-badge-tag">UI/UX & DEVELOPMENT WORKFLOW</div>
+      <h1 class="section-main-title word-pop-container" style="font-size: clamp(2.5rem, 5vw, 4rem);">
+        From Idea → Interface → Experience
+      </h1>
+      <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 720px; line-height: 1.7;">
+        A disciplined, 4-stage engineering and design methodology that guarantees exceptional performance, human-centered UX, and code quality.
+      </p>
+    </section>
+
+    <!-- 4 STAGE PROCESS CARDS -->
+    <section class="process-stages-section" style="margin-bottom: 80px;">
+      <div class="process-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+        
+        <div class="process-step-card glass-card tilt-card" style="padding: 32px 24px;">
+          <div class="step-num" style="color: var(--accent-red); font-size: 2.2rem; font-weight: 800;">01</div>
+          <h3 class="step-name" style="font-size: 1.3rem; margin-bottom: 10px;">Discover & Research</h3>
+          <p class="step-desc">
+            Understand the core problem statement, identify key user objectives, analyze competitive products, and define precise technical requirements.
+          </p>
+          <div style="margin-top: 16px; font-size: 0.78rem; color: var(--accent-red); font-weight: 700;">Key Output: User Flow & Scope</div>
+        </div>
+
+        <div class="process-step-card glass-card tilt-card" style="padding: 32px 24px;">
+          <div class="step-num" style="color: var(--accent-magenta); font-size: 2.2rem; font-weight: 800;">02</div>
+          <h3 class="step-name" style="font-size: 1.3rem; margin-bottom: 10px;">Wireframe & Design System</h3>
+          <p class="step-desc">
+            Build interactive Figma wireframes, establish color tokens, structure typography scales, and design accessible glassmorphic UI components.
+          </p>
+          <div style="margin-top: 16px; font-size: 0.78rem; color: var(--accent-magenta); font-weight: 700;">Key Output: Figma Design System</div>
+        </div>
+
+        <div class="process-step-card glass-card tilt-card" style="padding: 32px 24px;">
+          <div class="step-num" style="color: var(--accent-purple); font-size: 2.2rem; font-weight: 800;">03</div>
+          <div class="step-name" style="font-size: 1.3rem; margin-bottom: 10px;">Code Architecture</div>
+          <p class="step-desc">
+            Translate design files into modular React/Next.js components, integrate backend endpoints with Node/Express, and style with Tailwind CSS.
+          </p>
+          <div style="margin-top: 16px; font-size: 0.78rem; color: var(--accent-purple); font-weight: 700;">Key Output: Clean Production Code</div>
+        </div>
+
+        <div class="process-step-card glass-card tilt-card" style="padding: 32px 24px;">
+          <div class="step-num" style="color: #ffffff; font-size: 2.2rem; font-weight: 800;">04</div>
+          <div class="step-name" style="font-size: 1.3rem; margin-bottom: 10px;">Refine & Polish</div>
+          <p class="step-desc">
+            Perform interaction testing, tune smooth LERP scroll physics, optimize image preloading, and polish micro-animations to perfection.
+          </p>
+          <div style="margin-top: 16px; font-size: 0.78rem; color: #ffffff; font-weight: 700;">Key Output: 60FPS Fluid Experience</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <a href="index.html" class="ps-logo-badge">POOJITH S</a>
+        <p class="copyright-text">Web Developer • UI/UX Developer — APS College of Engineering</p>
+        <p class="copyright-text">© 2026 Poojith S. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js?v=1723250000"></script>
+</body>
+
+</html>
